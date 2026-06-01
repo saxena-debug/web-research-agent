@@ -51,6 +51,12 @@ if run_btn and goal.strip():
         if event["status"] == "finished":
             result = event["result"]
 
+            # blocked by guardrail
+            if result.get("blocked"):
+                st.error("Query blocked: " + result.get("violation", "inappropriate content"))
+                st.warning(result.get("report", "This query was not processed."))
+                break
+
             # quality never passed — show message, dont generate report
             if result.get("low_quality"):
                 st.warning(result.get("report", "Quality threshold not met."))

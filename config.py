@@ -6,11 +6,13 @@ load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+GROQ_API_KEY   = os.getenv("GROQ_API_KEY")
 
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY missing. Check your .env file.")
 if not TAVILY_API_KEY:
     raise ValueError("TAVILY_API_KEY missing. Check your .env file.")
+# GROQ_API_KEY is optional — guardrail fails open if not set
 
 with open("config.yaml") as f:
     _cfg = yaml.safe_load(f)

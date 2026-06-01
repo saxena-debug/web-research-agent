@@ -8,6 +8,7 @@ from tools import expand_queries, tavily_search, summarize_sources, format_resul
 from metrics import grade_results
 from logger import AgentLogger
 from prompts import plan_prompt, compile_prompt
+from input_guardrail_check import check_safety
 
 
 def _strip_sources_section(text):
@@ -39,6 +40,27 @@ class ResearchAgent:
                 callback({"msg": msg, "status": status, "score": score})
 
         self.logger.log_run_start(goal)
+
+        # guardrail check r
+        is_safe, violation = check_safety(goal)
+        if not is_safe:
+            update("Query flagged by safety check: " + violation, "blocked")
+            self.logger.log_task("guardrail", "blocked", reason=violation)
+            self.logger.log_run_end("blocked")
+            self.logger.log_blocked(violation)
+            return {
+                "run_id":        self.run_id,
+                "goal":          goal,
+                "blocked":       True,
+                "violation":     violation,
+                "report":        "This query was flagged as inappropriate and was not processed.\n\nViolation category: " + violation,
+                "total_tokens":  0,
+                "quality_score": 0,
+                "sources":       [],
+                "images":        [],
+                "total_time":    0,
+            }
+
         start_total = time.time()
         total_tokens = 0
         token_breakdown = {
@@ -86,7 +108,7 @@ class ResearchAgent:
         '''This is a retry loop : feedback from grader feeds back into query expansion
         TOFIX: this re-runs the full search + summarize from scratch on retry,
         which means were throwing away valid summaries just because a few sources were bad.
-        a smarter approach would cache the good ones and only re-fetch the gaps.'''
+        a smarter approach would cache the good ones and only refetch the gaps.'''
 
         quality_score, feedback = 0.0, {}
         for attempt in range(config.MAX_RETRIES + 1):

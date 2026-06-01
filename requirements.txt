@@ -4,3 +4,4 @@ streamlit
 python-dotenv
 pyyaml
 pytest
+groq

@@ -1,4 +1,4 @@
-'''it is the central LLM wrapper:all calls go through here so swapping the provider
+'''Creating this which is the central LLM wrapper:all calls go through here so swapping the provider
 only requires editing this one file'''
 
 import json
@@ -26,6 +26,14 @@ def call_llm(system: str, user: str, temperature: float = 0.3) -> tuple:
 
 
 def call_llm_json(system: str, user: str, temperature: float = 0) -> tuple:
+    '''sometimes the model returns empty string or wraps  json in markdown code fences
+    like 'json..' so I will  strip those before parsing. if parsing still fails I return
+    empty dict rather than crashing, callers check for missing keys anyways'''
     content, tokens = call_llm(system, user, temperature=temperature)
     clean = content.strip("```json").strip("```").strip()
-    return json.loads(clean), tokens
+    if not clean:
+        return {}, tokens
+    try:
+        return json.loads(clean), tokens
+    except json.JSONDecodeError:
+        return {}, tokens

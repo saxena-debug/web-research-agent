@@ -11,7 +11,7 @@ class AgentLogger:
         self.run_id  = run_id
         self.log_dir = Path(config.LOG_DIR)
         self.log_dir.mkdir(parents=True, exist_ok=True)
-        self._init_csv("agent_runs.csv",  ["run_id", "goal", "status", "start_time", "end_time", "tokens_used"])
+        self._init_csv("agent_runs.csv",  ["run_id", "goal", "status", "start_time", "end_time", "tokens_used", "blocked", "violation"])
         self._init_csv("task_events.csv", ["run_id", "task", "status", "score", "reason", "duration_ms", "timestamp"])
 
     def _init_csv(self, filename, headers):
@@ -26,7 +26,7 @@ class AgentLogger:
 
     def log_run_start(self, goal):
         self._append_csv("agent_runs.csv", [
-            self.run_id, goal, "running", datetime.now().isoformat(), "", ""
+            self.run_id, goal, "running", datetime.now().isoformat(), "", "", "", ""
         ])
 
     def log_run_end(self, status, tokens_used=0):
@@ -47,6 +47,25 @@ class AgentLogger:
                 row[4] = datetime.now().isoformat()
                 row[5] = str(tokens_used)
                 break
+
+    def log_blocked(self, violation):
+        path = self.log_dir / "agent_runs.csv"
+        with open(path, "r", newline="") as f:
+            rows = list(csv.reader(f))
+        for i, row in enumerate(rows):
+            if i == 0 or not row or not row[0]:
+                continue
+            if row[0] == self.run_id:
+                # extend row if needed
+                while len(row) < 8:
+                    row.append("")
+                row[6] = "yes"
+                row[7] = violation
+                row[2] = "blocked"
+                row[4] = datetime.now().isoformat()
+                break
+        with open(path, "w", newline="") as f:
+            csv.writer(f).writerows(rows)
 
         with open(path, "w", newline="") as f:
             csv.writer(f).writerows(rows)
