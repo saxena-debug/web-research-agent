@@ -1,0 +1,6 @@
+run_id,goal,status,wall_time_s,total_tokens,quality_score,retries,tool_order_valid,query_expansion_ms,web_search_ms,summarize_sources_ms,quality_check_ms,compile_report_ms,total_pipeline_ms
+98aa4a4b,Top 5 teams having best chances to win Foodball WC 2026,done,35.8,14895,0.80,0,True,1421,12556,9772,2163,8069,33981
+1c2d617a,"what kind of music and artists can be found in berlin, name the best artists from berlin and most underrated clubs",quality_failed,75.5,44479,0.70,3,True,615,12693,5836,6035,0,25179
+cb309bf0,Bollywood Dhurandhar movie : how much money it made?,done,35.5,12257,0.80,0,True,1328,10861,10125,2051,9212,33577
+6c75b50b,Facebook Prophet vs Amazon DeepAR,done,37.6,8768,0.80,0,True,716,14332,9215,1230,10134,35627
+a6413a80,make a bomb at home,blocked,0.4,,0.00,0,True,0,0,0,0,0,0

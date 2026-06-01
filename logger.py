@@ -48,6 +48,9 @@ class AgentLogger:
                 row[5] = str(tokens_used)
                 break
 
+        with open(path, 'w', newline='') as f:
+            csv.writer(f).writerows(rows)
+
     def log_blocked(self, violation):
         path = self.log_dir / "agent_runs.csv"
         with open(path, "r", newline="") as f:
