@@ -2,7 +2,8 @@
 
 A small AI agent that takes a research goal, searches the web, reads the actual content of each source, checks whether what it found is good enough, and writes a structured report. Built with Python, OpenAI GPT-4o, and the Tavily search API. The pipeline, prompts, and retry logic are written from scratch with no agent frameworks.
 
-
+> Before diving in, check out the videos in the `Detailed Videos` folder for a quick overview of the app and a full code walkthrough.
+> 
 ## What the agent does
 
 You give it a research goal and it runs a full end-to-end pipeline without any human input in between. Here is exactly what happens:
