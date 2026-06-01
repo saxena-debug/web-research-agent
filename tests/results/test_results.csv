@@ -1,0 +1,10 @@
+timestamp,file,test,status
+2026-06-01 11:20:56,tests/test_core.py,test_config_model_is_set,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_config_threshold_is_valid,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_config_api_keys_present,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_grader_passes_above_threshold,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_grader_fails_below_threshold,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_grader_passes_exactly_at_threshold,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_prompt_contains_goal,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_prompt_uses_config_query_count,PASSED
+2026-06-01 11:20:56,tests/test_core.py,test_prompt_threshold_flows_through,PASSED
