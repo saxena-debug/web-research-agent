@@ -33,7 +33,6 @@ report.py         HTML report generator
 config.py         loads config.yaml and .env
 config.yaml       all settings in one file
 input_guardrail_check.py  safety check run before the pipeline starts
-eval/eval_runner.py       runs evaluation scenarios and saves results
 eval/performance_report.py  reads logs and exports a per-run performance CSV
 tests/test_core.py        unit tests for config, grader, and prompts
 tests/run_tests.py        runs tests and saves results to tests/results/
