@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Research Report</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #222;
+            line-height: 1.7;
+        }
+        h1, h2, h3 { font-family: Arial, sans-serif; }
+        h2 { border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+        .meta { color: #888; font-size: 0.85rem; margin-bottom: 24px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        a { color: #1a5276; }
+        .sources ul { list-style: disc; }
+    </style>
+</head>
+<body>
+    <h1>Research Report</h1>
+    <div class="meta">
+        Run: 6c75b50b &nbsp;|&nbsp; 37.6s &nbsp;|&nbsp; 8768 tokens &nbsp;|&nbsp; quality score: 0.80
+    </div>
+    <p><strong>Goal:</strong> Facebook Prophet vs Amazon DeepAR</p>
+
+    <div style="margin: 16px 0;"><img src="https://miro.medium.com/1*JvoN0h70JwphhXekRdzvCQ.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://miro.medium.com/v2/resize:fit:1302/0*-AOHHOfP_1QxK-50.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*Ac_GC0jONI94H7Om00FEbw.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://towardsdatascience.com/wp-content/uploads/2023/03/1DyaFiRUSSTJ26y_VkEeItw.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://www.machinelearningmastery.com/wp-content/uploads/2020/02/Plot-of-Actual-vs.-Predicted-Values-for-Last-12-Months-of-Car-Sales.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://towardsdatascience.com/wp-content/uploads/2023/03/1CdMnhidciGXC-TbdRX28tg.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://www.artefact.com//wp-content/uploads/2022/03/article-hugo6.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://www.artefact.com//wp-content/uploads/2022/03/article-hugo2.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="x-raw-image:///901898766c136f4235128fdf74eac15f19feade880552865b57edb94b9f0ccf4" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="x-raw-image:///bcabb5033c6b43549d719d81d32eb2ba4c30435d7cf93cd05a9dbe24d5b3dacb" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="x-raw-image:///0bf407f1b523c4b86bb0a389b07c2e145ed6227d30582d45d66da47bcab4c595" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+<img src="https://www.artefact.com//wp-content/uploads/2022/03/article-hugo7.png" style="max-width:200px; margin:4px;" onerror="this.style.display='none'">
+</div>
+
+    <div class="report">
+        <h3>Executive Summary</h3>
+<p>This report provides a comprehensive analysis of two prominent time series forecasting models: Facebook Prophet and Amazon DeepAR. Both models are widely used in various industries for their unique strengths in handling different types of data and forecasting challenges. Facebook Prophet is particularly noted for its simplicity and effectiveness in dealing with datasets that have missing values, outliers, and irregular patterns, making it suitable for business forecasting. In contrast, Amazon DeepAR excels in handling large-scale datasets with complex temporal patterns, leveraging recurrent neural networks for probabilistic forecasting. While Prophet is user-friendly and computationally efficient, DeepAR offers superior accuracy in scenarios with rich historical data. The choice between these models should be guided by specific forecasting needs, such as dataset size, pattern complexity, and available computational resources. Ultimately, both models have proven successful in various applications, with their effectiveness varying based on the specific context and requirements of the forecasting task.</p>
+<h3>Key Findings</h3>
+<p>1. <strong>Model Characteristics</strong>:
+   - Facebook Prophet is a local Bayesian structural time series model, effective for datasets with extended historical observations, multiple seasonalities, and known irregular events. It uses an additive regression model with a piecewise linear or logistic growth curve trend.
+   - Amazon DeepAR employs recurrent neural networks (RNNs) to model complex temporal patterns across multiple time series, making it suitable for large-scale datasets and probabilistic forecasting.</p>
+<p>2. <strong>Performance and Application</strong>:
+   - Prophet is highlighted for its ease of use, requiring less computational power, and its ability to handle missing data and outliers effectively. It is particularly adept at modeling seasonal effects and holidays, which is beneficial for business forecasting.
+   - DeepAR is recognized for its advanced capabilities in handling large datasets and its superior accuracy in scenarios with complex patterns, thanks to its probabilistic forecasting approach.</p>
+<p>3. <strong>Comparative Analysis</strong>:
+   - Both models are robust, but their effectiveness varies based on the scenario and dataset. Prophet is favored for quick deployment and ease of use, while DeepAR is preferred for its robustness and precision in demanding environments.
+   - The choice between the two models should consider specific requirements such as interpretability, computational efficiency, and accuracy.</p>
+<p>4. <strong>Industry Applications</strong>:
+   - Both Prophet and DeepAR have been successfully applied in various industries, demonstrating their versatility and effectiveness in real-world forecasting tasks.</p>
+<p>5. <strong>Trends and Insights</strong>:
+   - There is no single superior model; the choice depends on the specific needs of the forecasting task. Understanding the nuances of each method is crucial for selecting the most appropriate tool.</p>
+<p>6. <strong>Limitations and Considerations</strong>:
+   - While Prophet is user-friendly, it may not perform as well as DeepAR in scenarios requiring high accuracy with large datasets. Conversely, DeepAR's computational demands may not be suitable for all users.</p>
+<h3>Analysis</h3>
+<p>The comparative analysis of Facebook Prophet and Amazon DeepAR reveals distinct strengths and applications for each model, underscoring the importance of aligning model choice with specific forecasting needs. Prophet's simplicity and effectiveness in handling irregular data patterns make it an attractive option for businesses seeking quick deployment and ease of use. Its ability to model seasonal effects and holidays is particularly beneficial for business forecasting, where such patterns are prevalent.</p>
+<p>In contrast, Amazon DeepAR's use of recurrent neural networks allows it to handle large-scale datasets with complex temporal patterns, offering superior accuracy in scenarios with rich historical data. This makes DeepAR a preferred choice for industries that require precise forecasting and can accommodate its computational demands. The model's probabilistic forecasting approach provides a robust framework for capturing uncertainties in predictions, which is crucial for decision-making in dynamic environments.</p>
+<p>The choice between Prophet and DeepAR should be guided by the specific requirements of the forecasting task. For smaller datasets or when computational resources are limited, Prophet's user-friendly nature and computational efficiency make it an ideal choice. However, for larger datasets with complex patterns, DeepAR's advanced capabilities and accuracy make it the more suitable option.</p>
+<p>Both models have demonstrated success across various industries, highlighting their versatility and effectiveness in real-world applications. This suggests that while each model has its strengths, they are not mutually exclusive and can be selected based on the specific context and requirements of the forecasting task.</p>
+<p>The analysis also highlights the importance of understanding the nuances of each method to select the most appropriate tool. While Prophet and DeepAR are both robust, their effectiveness can vary based on the scenario and dataset used. This emphasizes the need for a thorough evaluation of the specific forecasting needs before selecting a model.</p>
+<p>In conclusion, the comparative analysis of Facebook Prophet and Amazon DeepAR underscores the importance of aligning model choice with specific forecasting needs. Both models offer unique strengths and have proven successful in various applications, with their effectiveness varying based on the specific context and requirements of the forecasting task. Understanding the nuances of each method is crucial for selecting the most appropriate tool for specific forecasting needs.</p>
+    </div>
+
+    <div class="sources">
+        <h2>Sources</h2>
+        <ul>
+            <li><a href="https://towardsai.net/p/machine-learning/comparing-four-time-series-forecasting-methods-prophet-deepar-tfp-sts-and-adaptive-ar" target="_blank">Comparing Four Time Series Forecasting Methods: Prophet, DeepAR, TFP-STS, and Adaptive AR | Towards AI</a></li>
+<li><a href="https://docs.aws.amazon.com/forecast/latest/dg/aws-forecast-recipe-prophet.html" target="_blank">Prophet Algorithm - Amazon Forecast</a></li>
+<li><a href="https://www.researchgate.net/publication/351298753_Comparison_Analysis_of_Facebook's_Prophet_Amazon's_DeepAR_and_CNN-QR_Algorithms_for_Successful_Real-World_Sales_Forecasting" target="_blank">Comparison Analysis of Facebook's Prophet, Amazon's DeepAR+ ...</a></li>
+
+        </ul>
+    </div>
+</body>
+</html>

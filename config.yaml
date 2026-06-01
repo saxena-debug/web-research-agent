@@ -1,0 +1,25 @@
+model: "gpt-4o"                  # openai model to use for all llm calls
+
+agent:
+  max_retries: 2                 # how many times to retry if quality check fails
+  max_search_results: 3          # results fetched per search query from tavily
+  max_queries: 3                 # max number of queries in Query expansion
+  max_summarize_sources: 5       # max sources to fully read and summarize
+
+depth:
+  source_char_limit: 10000       # chars read per source page so higher means richer input but more tokens
+  source_summary_sentences: 20   # sentences extracted per source summary
+  exec_summary_sentences: 6      # sentences in the executive summary of the final report
+  analysis_paragraphs: 6         # paragraphs in the analysis section of the final report
+
+thresholds:
+  quality: 0.7                   # minimum quality score to accept results (0 to 1)
+
+trust_filter:
+  blocklist:                     # domains excluded from search results
+    - pinterest.com
+    - spam.com
+
+logging:
+  log_dir: "logs"                # where agent run logs and traces are saved
+  report_dir: "reports"          # where html reports are saved

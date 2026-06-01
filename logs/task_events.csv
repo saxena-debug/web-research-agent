@@ -1,0 +1,55 @@
+run_id,task,status,score,reason,duration_ms,timestamp
+0b1e493a,query_expansion,done,,,1116,2026-06-01T04:45:39.467045
+0b1e493a,web_search,done,,,9622,2026-06-01T04:45:49.090336
+0b1e493a,summarize_sources,done,,,4911,2026-06-01T04:45:54.002931
+0b1e493a,source_dropped,dropped,https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups,not relevant to goal,0,2026-06-01T04:45:54.003681
+0b1e493a,source_dropped,dropped,https://www.cbssports.com/soccer/news/fifa-world-cup-2026-odds-favorites-futures-picks-predictions-soccer-best-bets,not relevant to goal,0,2026-06-01T04:45:54.003954
+0b1e493a,source_dropped,dropped,https://medium.com/@XT_com/world-cup-2026-power-rankings-top-teams-rising-contenders-whos-gaining-momentum-e1c2d9afa827,not relevant to goal,0,2026-06-01T04:45:54.004143
+0b1e493a,source_dropped,dropped,https://www.facebook.com/groups/746775813892738/posts/1278717524031895,not relevant to goal,0,2026-06-01T04:45:54.004294
+0b1e493a,source_dropped,dropped,https://www.espn.com/soccer/story/_/id/48677225/fifa-world-cup-power-rankings-spain-brazil-germany-england-argentina,skipped — over processing cap,0,2026-06-01T04:45:54.004407
+d6e7e9e9,query_expansion,done,,,1031,2026-06-01T04:48:40.930186
+d6e7e9e9,web_search,done,,,12438,2026-06-01T04:48:53.370879
+d6e7e9e9,summarize_sources,done,,,8027,2026-06-01T04:49:01.399213
+d6e7e9e9,source_dropped,dropped,https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups,not relevant to goal,0,2026-06-01T04:49:01.400315
+d6e7e9e9,source_dropped,dropped,https://bleacherreport.com/articles/25314362-fifa-world-cup-power-rankings,not relevant to goal,0,2026-06-01T04:49:01.400819
+d6e7e9e9,source_dropped,dropped,https://www.espn.com/soccer/story/_/id/48677225/fifa-world-cup-power-rankings-spain-brazil-germany-england-argentina,skipped — over processing cap,0,2026-06-01T04:49:01.400980
+98aa4a4b,query_expansion,done,,,1421,2026-06-01T04:57:15.889079
+98aa4a4b,web_search,done,,,12556,2026-06-01T04:57:28.446252
+98aa4a4b,summarize_sources,done,,,9772,2026-06-01T04:57:38.219638
+98aa4a4b,source_dropped,dropped,https://worldfootball26.com/ai-world-cup-predictions-year-by-year-winners,skipped — over processing cap,0,2026-06-01T04:57:38.220602
+98aa4a4b,quality_check,done,0.8,"{'issues': 'The results provide a comprehensive overview of the top teams with the best chances to win the 2026 World Cup, based on various models and rankings. However, there is some inconsistency in the rankings of the teams across different sources.', 'missing_topics': 'The results could benefit from more detailed analysis on the strengths and weaknesses of each team, potential impact of emerging players, and insights into the strategies that might be employed by these teams.', 'query_suggestions': ""Explore queries like 'detailed analysis of top teams for World Cup 2026', 'emerging players to watch in World Cup 2026', or 'strategies of top teams for World Cup 2026'.""}",2163,2026-06-01T04:57:40.384342
+98aa4a4b,compile_report,done,,,8069,2026-06-01T04:57:48.454576
+1c2d617a,query_expansion,done,,,615,2026-06-01T05:02:58.216039
+1c2d617a,web_search,done,,,12693,2026-06-01T05:03:10.910501
+1c2d617a,summarize_sources,done,,,5836,2026-06-01T05:03:16.747914
+1c2d617a,source_dropped,dropped,https://www.bandsintown.com/c/berlin-germany,not relevant to goal,0,2026-06-01T05:03:16.748846
+1c2d617a,source_dropped,dropped,https://www.yelp.com/search?find_desc=Hidden+Clubs&find_loc=Berlin,not relevant to goal,0,2026-06-01T05:03:16.749338
+1c2d617a,source_dropped,dropped,https://www.tripadvisor.com/Attractions-g187323-Activities-c20-t109-Berlin.html,not relevant to goal,0,2026-06-01T05:03:16.749519
+1c2d617a,source_dropped,dropped,https://www.tripadvisor.com/Attraction_Review-g187323-d25374992-Reviews-M_BIA_club_berlin-Berlin.html,skipped — over processing cap,0,2026-06-01T05:03:16.749652
+1c2d617a,quality_check,retry,0.4,"{'issues': 'The results provide information about upcoming concerts and international artists performing in Berlin, but they do not specifically address the best artists from Berlin or the most underrated clubs. The focus is more on international acts and scheduled events rather than local music scenes.', 'missing_topics': 'Information on the best local artists from Berlin, details on underrated clubs in Berlin, and insights into the local music scene.', 'query_suggestions': ""Search for 'best local artists in Berlin', 'underrated music clubs in Berlin', or 'Berlin local music scene highlights'.""}",2253,2026-06-01T05:03:19.002971
+1c2d617a,source_dropped,dropped,https://www.bandsintown.com/c/berlin-germany,not relevant to goal,0,2026-06-01T05:03:39.330165
+1c2d617a,source_dropped,dropped,https://www.tripadvisor.com/Attractions-g187323-Activities-c20-t109-Berlin.html,not relevant to goal,0,2026-06-01T05:03:39.331174
+1c2d617a,source_dropped,dropped,https://m.yelp.com/search?find_desc=Nightlife&find_loc=Urbanstr.+68%2C+Kreuzberg%2C+10967+Berlin%2C+Germany,not relevant to goal,0,2026-06-01T05:03:39.331706
+1c2d617a,source_dropped,dropped,https://wanderlog.com/list/geoCategory/813884/best-live-music-venues-and-concert-halls-in-berlin,skipped — over processing cap,0,2026-06-01T05:03:39.332027
+1c2d617a,quality_check,retry,0.7,"{'issues': 'The results provide a good overview of the music scene in Berlin, including a variety of artists and genres. However, they lack specific information on the best artists from Berlin and do not comprehensively list the most underrated clubs.', 'missing_topics': 'Detailed information on the best artists originating from Berlin and a more comprehensive list of underrated clubs.', 'query_suggestions': ""Search for 'best Berlin artists 2026', 'underrated music clubs Berlin 2026', or 'local Berlin music scene 2026' to find more specific information on local talent and lesser-known venues.""}",1739,2026-06-01T05:03:41.072246
+1c2d617a,source_dropped,dropped,https://www.berlin.de/en/tickets/concert-highlights/9999448-7278356-top-concerts-2026.en.html,not relevant to goal,0,2026-06-01T05:04:09.382674
+1c2d617a,source_dropped,dropped,https://www.yelp.com/search?find_desc=Hidden+Clubs&find_loc=Berlin,not relevant to goal,0,2026-06-01T05:04:09.383626
+1c2d617a,source_dropped,dropped,https://www.tripadvisor.com/Attractions-g187323-Activities-c20-t109-Berlin.html,not relevant to goal,0,2026-06-01T05:04:09.384122
+1c2d617a,source_dropped,dropped,https://www.tripadvisor.com/Attraction_Review-g187323-d25374992-Reviews-M_BIA_club_berlin-Berlin.html,skipped — over processing cap,0,2026-06-01T05:04:09.384322
+1c2d617a,quality_check,retry,0.7,"{'issues': 'The results provide a good overview of the music scene in Berlin, including a variety of genres and artists performing in the city. However, they lack specific information on the best local Berlin artists and do not explicitly identify the most underrated clubs.', 'missing_topics': 'Detailed information on the best local artists from Berlin and a focused list of underrated clubs in the city.', 'query_suggestions': ""Search for 'best local Berlin music artists 2026', 'underrated music clubs in Berlin 2026', or 'Berlin music scene local artists and clubs 2026'.""}",2043,2026-06-01T05:04:11.428374
+cb309bf0,query_expansion,done,,,1328,2026-06-01T05:18:01.074009
+cb309bf0,web_search,done,,,10861,2026-06-01T05:18:11.936750
+cb309bf0,summarize_sources,done,,,10125,2026-06-01T05:18:22.063654
+cb309bf0,source_dropped,dropped,https://www.msn.com/en-in/entertainment/bollywood/box-office-collection-april-15-2026-dhurandhar-2-dominates-week-4-as-vaazha-2-crosses-rs-107-crore/ar-AA211pYP?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1,not relevant to goal,0,2026-06-01T05:18:22.063956
+cb309bf0,source_dropped,dropped,https://www.imdb.com/news/ni65791480,not relevant to goal,0,2026-06-01T05:18:22.064253
+cb309bf0,quality_check,done,0.8,"{'issues': ""The results provide detailed box office earnings for the movie 'Dhurandhar' and its sequel 'Dhurandhar 2'. However, there is some confusion due to the presence of multiple films with similar names and different earnings figures. The results could be clearer in distinguishing between the two films."", 'missing_topics': ""A clear distinction between the earnings of 'Dhurandhar' and 'Dhurandhar 2', as well as a comparison of their financial success."", 'query_suggestions': ""Search for 'Dhurandhar 2025 box office earnings' or 'Dhurandhar movie earnings breakdown' to get more specific results for the original film.""}",2051,2026-06-01T05:18:24.115449
+cb309bf0,compile_report,done,,,9212,2026-06-01T05:18:33.328914
+6c75b50b,query_expansion,done,,,716,2026-06-01T05:26:30.516220
+6c75b50b,web_search,done,,,14332,2026-06-01T05:26:44.850240
+6c75b50b,summarize_sources,done,,,9215,2026-06-01T05:26:54.067037
+6c75b50b,source_dropped,dropped,https://medium.com/data-science/prophet-vs-deepar-forecasting-food-demand-2fdebfb8d282,not relevant to goal,0,2026-06-01T05:26:54.068019
+6c75b50b,source_dropped,dropped,https://arxiv.org/pdf/2105.00694,not relevant to goal,0,2026-06-01T05:26:54.068514
+6c75b50b,source_dropped,dropped,https://benhay.es/posts/time-series-facebook-prophet,skipped — over processing cap,0,2026-06-01T05:26:54.068711
+6c75b50b,source_dropped,dropped,https://www.facebook.com/groups/MDLI1/posts/743030369194347,skipped — over processing cap,0,2026-06-01T05:26:54.068864
+6c75b50b,quality_check,done,0.8,"{'issues': 'The second result does not provide a direct comparison between Facebook Prophet and Amazon DeepAR, focusing instead on the use of Prophet within Amazon Forecast. This limits its relevance to the research goal.', 'missing_topics': 'A detailed comparison of the performance metrics of Facebook Prophet and Amazon DeepAR across different industries or use cases. Insights into the computational requirements and scalability of each model.', 'query_suggestions': ""Try queries like 'Facebook Prophet vs Amazon DeepAR performance comparison', 'Prophet vs DeepAR forecasting accuracy', or 'Prophet and DeepAR use cases in industry'.""}",1230,2026-06-01T05:26:55.299467
+6c75b50b,compile_report,done,,,10134,2026-06-01T05:27:05.435323

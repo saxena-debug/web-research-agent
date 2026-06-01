@@ -1,0 +1,7 @@
+run_id,goal,status,start_time,end_time,tokens_used
+0b1e493a,Top 5 teams having best chances to win Foodball WC 2026,running,2026-06-01T04:45:36.401307,,
+d6e7e9e9,Top 5 teams having best chances to win Foodball WC 2026,running,2026-06-01T04:48:38.328041,,
+98aa4a4b,Top 5 teams having best chances to win Foodball WC 2026,done,2026-06-01T04:57:12.678375,2026-06-01T04:57:48.457214,14895
+1c2d617a,"what kind of music and artists can be found in berlin, name the best artists from berlin and most underrated clubs",quality_failed,2026-06-01T05:02:55.895321,2026-06-01T05:04:11.430848,44479
+cb309bf0,Bollywood Dhurandhar movie : how much money it made?,done,2026-06-01T05:17:57.790440,2026-06-01T05:18:33.330113,12257
+6c75b50b,Facebook Prophet vs Amazon DeepAR,done,2026-06-01T05:26:27.862749,2026-06-01T05:27:05.438227,8768
